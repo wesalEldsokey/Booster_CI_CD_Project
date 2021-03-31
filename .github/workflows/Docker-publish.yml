@@ -14,6 +14,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: | 
-          docker build . --file Dockerfile --tag wesaleldsokey/iti:v20
+          docker build . --file Dockerfile --tag wesaleldsokey/iti:v200
           docker login -u ${{ secrets.DOKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push wesaleldsokey/iti:v20
+          docker push wesaleldsokey/iti:v200
